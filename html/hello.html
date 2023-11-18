@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.9.8" integrity="sha384-rgjA7mptc2ETQqXoYC3/zJvkU7K/aP44Y+z7xQuJiVnB/422P/Ak+F/AqFR7E4Wr" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <button hx-post="/clicked" hx-swap="innerHTML">
+            Count: 0
+        </button>
+    </div>
+</body>
+
+<style>
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    span {
+        text-decoration: wavy;
+        color: green;
+        font-size: x-large;
+    }
+</style>
+</html>
